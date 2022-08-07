@@ -27,8 +27,9 @@ void PrintArray(int[] col)
         position++;
     }
 }
-
+PrintArray(massive);
 for (int i = 0; i < massive.Length; i++) massive[i] *= - 1;
+
 Console.WriteLine();
 PrintArray(massive);
 
