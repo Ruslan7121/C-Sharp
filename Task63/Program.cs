@@ -1,5 +1,4 @@
-﻿//Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
-Console.Write("Введите коллиечество строк: ");
+﻿Console.Write("Введите коллиечество строк: ");
 int linesVol = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите колличество столбцов: ");
 int columnsVol = Convert.ToInt32(Console.ReadLine());
@@ -25,7 +24,7 @@ for (int i = 0; i < numbers.GetLength(0); i++)
     }
 }
 
-Console.WriteLine("\nСтрока с наименьшей суммой елементов №" + (IndexLine) + ". Сумма елементов в ней равна " + (minsum) + ".");
+Console.WriteLine("\nСтрока с наименьшей суммой элементов №" + (IndexLine) + ". Сумма елементов в ней равна " + (minsum) + ".");
 
 void PrintArray(int[,] matr)
 {
