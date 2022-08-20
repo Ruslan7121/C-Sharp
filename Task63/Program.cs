@@ -24,7 +24,7 @@ for (int i = 0; i < numbers.GetLength(0); i++)
     }
 }
 
-Console.WriteLine("\nСтрока с наименьшей суммой элементов №" + (IndexLine) + ". Сумма елементов в ней равна " + (minsum) + ".");
+Console.WriteLine("\nСтрока с наименьшей суммой элементов №" + (IndexLine) + ". Сумма элементов в ней равна " + (minsum) + ".");
 
 void PrintArray(int[,] matr)
 {
