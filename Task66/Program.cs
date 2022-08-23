@@ -1,21 +1,23 @@
-﻿// Задача 64: Задайте значение N. Напишите программу, которая выведет все натуральные числа в промежутке от N до 1.
-// N = 5 -> "5, 4, 3, 2, 1"
-// N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
-int N = InputNumbers("Введите число: ");
-int count = 1;
+﻿int N = InputInt("Введите число: ");
+int FiniteNumber = 1;
 
-void PrintNumber(int N, int count)
+if (N < 1)
 {
-  if (count > N) return;
-  PrintNumber(N, count + 1);
-  Console.Write(count + ", ");
+    Console.WriteLine("Ввели не положительное число");
+}
+Console.WriteLine(NaturalNumber(N, FiniteNumber));
+
+int NaturalNumber(int N, int FiniteNumber)
+{
+    if (N == FiniteNumber) return N;
+    else
+        Console.Write($"{NaturalNumber(N, FiniteNumber + 1)}, ");
+    return FiniteNumber;
 }
 
-int InputNumbers(string input) 
+int InputInt(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
-
-PrintNumber(N, count);
